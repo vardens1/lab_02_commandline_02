@@ -1,4 +1,4 @@
-Lab - Output, Download and Uncompress
+\Lab - Output, Download and Uncompress
 ==========
 Follow the instructions line-by-line.  
 
@@ -18,7 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+hello
 
 
 ==========
@@ -28,7 +28,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+hello there
 
 
 ==========
@@ -39,7 +39,7 @@ $ echo good mornin'
 Copy and paste the output below.
 ----------
 
-
+>
 
 ==========
 4. Uh-oh... we're stuck!
@@ -47,7 +47,7 @@ Copy and paste the output below.
 Type [CTRL + C] to get your prompt back.
 ----------
 
-
+no output
 
 ==========
 5. Say good mornin' again with quotes!
@@ -56,7 +56,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+good morning’
 
 
 ==========
@@ -66,7 +66,7 @@ $ echo *
 
 What happens?
 ----------
-
+It prints all the items in the current directory
 
 
 ==========
@@ -74,7 +74,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+clear
 
 
 ==========
@@ -88,7 +88,12 @@ $ curl google.com
 Copy and paste the output below.
 ----------
 
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 ==========
 9. And again.  This time, add www to the URL.
@@ -98,7 +103,7 @@ $ curl www.google.com
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
 
-
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head><meta content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." name="description"><meta content="noodp" name="robots"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title>
 
 ==========
 10. That's great, but what if I want to save the file?  What flag/option and option argument would I use to download the page to a file called google.html?  Run it to download the URL www.google.com.
@@ -106,6 +111,11 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 Write the command you used below.  Also copy and paste the output below.
 ----------
 
+curl -o google.txt www.google.com
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 10209    0 10209    0     0  20124      0 --:--:-- --:--:-- --:--:-- 20175
 
 
 ==========
@@ -114,7 +124,9 @@ Write the command you used below.  Also copy and paste the output below.
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
 
+pwd
 
+/users/student
 
 ==========
 12. If you're not in your home directory, change to it (use the shortcut).
@@ -122,7 +134,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
-
+cd ~
 
 ==========
 13. So... the lab materials are located at this url:
@@ -138,7 +150,9 @@ Use ls to verify that it downloaded.
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
 
-
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  935k  100  935k    0     0   937k      0 --:--:-- --:--:-- --:--:-- 2569k
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
@@ -154,7 +168,219 @@ Write down the command that you used to uncompress the file.
 Copy and paste the output below.
 ----------
 
-
+Archive:  mtec1002-lab-02.zip
+   creating: mtec1002-lab-02/
+  inflating: mtec1002-lab-02/.DS_Store  
+   creating: __MACOSX/
+   creating: __MACOSX/mtec1002-lab-02/
+  inflating: __MACOSX/mtec1002-lab-02/._.DS_Store  
+   creating: mtec1002-lab-02/books/
+   creating: mtec1002-lab-02/books/other/
+  inflating: mtec1002-lab-02/books/other/pg1232.txt  
+   creating: mtec1002-lab-02/books/science-fiction/
+  inflating: mtec1002-lab-02/books/science-fiction/pg84.txt  
+  inflating: mtec1002-lab-02/books/science-fiction/pg86.txt  
+   creating: mtec1002-lab-02/logs/
+  inflating: mtec1002-lab-02/logs/.DS_Store  
+   creating: __MACOSX/mtec1002-lab-02/logs/
+  inflating: __MACOSX/mtec1002-lab-02/logs/._.DS_Store  
+  inflating: mtec1002-lab-02/logs/access-0.log  
+  inflating: mtec1002-lab-02/logs/access-1.log  
+  inflating: mtec1002-lab-02/logs/access-10.log  
+  inflating: mtec1002-lab-02/logs/access-11.log  
+  inflating: mtec1002-lab-02/logs/access-111.log  
+  inflating: mtec1002-lab-02/logs/access-112.log  
+  inflating: mtec1002-lab-02/logs/access-113.log  
+  inflating: mtec1002-lab-02/logs/access-114.log  
+  inflating: mtec1002-lab-02/logs/access-115.log  
+  inflating: mtec1002-lab-02/logs/access-12.log  
+  inflating: mtec1002-lab-02/logs/access-122.log  
+  inflating: mtec1002-lab-02/logs/access-13.log  
+  inflating: mtec1002-lab-02/logs/access-14.log  
+  inflating: mtec1002-lab-02/logs/access-15.log  
+  inflating: mtec1002-lab-02/logs/access-150.log  
+  inflating: mtec1002-lab-02/logs/access-151.log  
+  inflating: mtec1002-lab-02/logs/access-152.log  
+  inflating: mtec1002-lab-02/logs/access-158.log  
+  inflating: mtec1002-lab-02/logs/access-159.log  
+  inflating: mtec1002-lab-02/logs/access-16.log  
+  inflating: mtec1002-lab-02/logs/access-160.log  
+  inflating: mtec1002-lab-02/logs/access-161.log  
+  inflating: mtec1002-lab-02/logs/access-162.log  
+  inflating: mtec1002-lab-02/logs/access-163.log  
+  inflating: mtec1002-lab-02/logs/access-164.log  
+  inflating: mtec1002-lab-02/logs/access-166.log  
+  inflating: mtec1002-lab-02/logs/access-167.log  
+  inflating: mtec1002-lab-02/logs/access-168.log  
+  inflating: mtec1002-lab-02/logs/access-17.log  
+  inflating: mtec1002-lab-02/logs/access-170.log  
+  inflating: mtec1002-lab-02/logs/access-172.log  
+  inflating: mtec1002-lab-02/logs/access-174.log  
+  inflating: mtec1002-lab-02/logs/access-175.log  
+  inflating: mtec1002-lab-02/logs/access-176.log  
+  inflating: mtec1002-lab-02/logs/access-177.log  
+  inflating: mtec1002-lab-02/logs/access-178.log  
+  inflating: mtec1002-lab-02/logs/access-179.log  
+  inflating: mtec1002-lab-02/logs/access-18.log  
+  inflating: mtec1002-lab-02/logs/access-180.log  
+  inflating: mtec1002-lab-02/logs/access-182.log  
+  inflating: mtec1002-lab-02/logs/access-183.log  
+  inflating: mtec1002-lab-02/logs/access-186.log  
+  inflating: mtec1002-lab-02/logs/access-187.log  
+  inflating: mtec1002-lab-02/logs/access-189.log  
+  inflating: mtec1002-lab-02/logs/access-19.log  
+  inflating: mtec1002-lab-02/logs/access-191.log  
+  inflating: mtec1002-lab-02/logs/access-192.log  
+  inflating: mtec1002-lab-02/logs/access-2.log  
+  inflating: mtec1002-lab-02/logs/access-20.log  
+  inflating: mtec1002-lab-02/logs/access-204.log  
+  inflating: mtec1002-lab-02/logs/access-205.log  
+  inflating: mtec1002-lab-02/logs/access-207.log  
+  inflating: mtec1002-lab-02/logs/access-208.log  
+  inflating: mtec1002-lab-02/logs/access-209.log  
+  inflating: mtec1002-lab-02/logs/access-21.log  
+  inflating: mtec1002-lab-02/logs/access-210.log  
+  inflating: mtec1002-lab-02/logs/access-211.log  
+  inflating: mtec1002-lab-02/logs/access-213.log  
+  inflating: mtec1002-lab-02/logs/access-22.log  
+  inflating: mtec1002-lab-02/logs/access-23.log  
+  inflating: mtec1002-lab-02/logs/access-24.log  
+  inflating: mtec1002-lab-02/logs/access-25.log  
+  inflating: mtec1002-lab-02/logs/access-251.log  
+  inflating: mtec1002-lab-02/logs/access-252.log  
+  inflating: mtec1002-lab-02/logs/access-253.log  
+  inflating: mtec1002-lab-02/logs/access-254.log  
+  inflating: mtec1002-lab-02/logs/access-255.log  
+  inflating: mtec1002-lab-02/logs/access-256.log  
+  inflating: mtec1002-lab-02/logs/access-257.log  
+  inflating: mtec1002-lab-02/logs/access-258.log  
+  inflating: mtec1002-lab-02/logs/access-26.log  
+  inflating: mtec1002-lab-02/logs/access-27.log  
+  inflating: mtec1002-lab-02/logs/access-28.log  
+  inflating: mtec1002-lab-02/logs/access-29.log  
+  inflating: mtec1002-lab-02/logs/access-3.log  
+  inflating: mtec1002-lab-02/logs/access-30.log  
+  inflating: mtec1002-lab-02/logs/access-31.log  
+  inflating: mtec1002-lab-02/logs/access-32.log  
+  inflating: mtec1002-lab-02/logs/access-33.log  
+  inflating: mtec1002-lab-02/logs/access-34.log  
+  inflating: mtec1002-lab-02/logs/access-35.log  
+  inflating: mtec1002-lab-02/logs/access-36.log  
+  inflating: mtec1002-lab-02/logs/access-37.log  
+  inflating: mtec1002-lab-02/logs/access-38.log  
+  inflating: mtec1002-lab-02/logs/access-39.log  
+  inflating: mtec1002-lab-02/logs/access-4.log  
+  inflating: mtec1002-lab-02/logs/access-40.log  
+  inflating: mtec1002-lab-02/logs/access-41.log  
+  inflating: mtec1002-lab-02/logs/access-42.log  
+  inflating: mtec1002-lab-02/logs/access-43.log  
+  inflating: mtec1002-lab-02/logs/access-44.log  
+  inflating: mtec1002-lab-02/logs/access-45.log  
+  inflating: mtec1002-lab-02/logs/access-46.log  
+  inflating: mtec1002-lab-02/logs/access-47.log  
+  inflating: mtec1002-lab-02/logs/access-48.log  
+  inflating: mtec1002-lab-02/logs/access-49.log  
+  inflating: mtec1002-lab-02/logs/access-5.log  
+  inflating: mtec1002-lab-02/logs/access-50.log  
+  inflating: mtec1002-lab-02/logs/access-52.log  
+  inflating: mtec1002-lab-02/logs/access-53.log  
+  inflating: mtec1002-lab-02/logs/access-56.log  
+  inflating: mtec1002-lab-02/logs/access-57.log  
+  inflating: mtec1002-lab-02/logs/access-58.log  
+  inflating: mtec1002-lab-02/logs/access-6.log  
+  inflating: mtec1002-lab-02/logs/access-60.log  
+  inflating: mtec1002-lab-02/logs/access-62.log  
+  inflating: mtec1002-lab-02/logs/access-63.log  
+  inflating: mtec1002-lab-02/logs/access-65.log  
+  inflating: mtec1002-lab-02/logs/access-68.log  
+  inflating: mtec1002-lab-02/logs/access-69.log  
+  inflating: mtec1002-lab-02/logs/access-7.log  
+  inflating: mtec1002-lab-02/logs/access-70.log  
+  inflating: mtec1002-lab-02/logs/access-72.log  
+  inflating: mtec1002-lab-02/logs/access-73.log  
+  inflating: mtec1002-lab-02/logs/access-74.log  
+  inflating: mtec1002-lab-02/logs/access-76.log  
+  inflating: mtec1002-lab-02/logs/access-78.log  
+  inflating: mtec1002-lab-02/logs/access-8.log  
+  inflating: mtec1002-lab-02/logs/access-81.log  
+  inflating: mtec1002-lab-02/logs/access-83.log  
+  inflating: mtec1002-lab-02/logs/access-89.log  
+  inflating: mtec1002-lab-02/logs/access-9.log  
+  inflating: mtec1002-lab-02/logs/access-90.log  
+  inflating: mtec1002-lab-02/logs/access-91.log  
+  inflating: mtec1002-lab-02/logs/access-93.log  
+   creating: mtec1002-lab-02/logs/archived/
+  inflating: mtec1002-lab-02/logs/archived/access-100.log  
+  inflating: mtec1002-lab-02/logs/archived/access-101.log  
+  inflating: mtec1002-lab-02/logs/archived/access-102.log  
+  inflating: mtec1002-lab-02/logs/archived/access-104.log  
+  inflating: mtec1002-lab-02/logs/archived/access-105.log  
+  inflating: mtec1002-lab-02/logs/archived/access-106.log  
+  inflating: mtec1002-lab-02/logs/archived/access-107.log  
+  inflating: mtec1002-lab-02/logs/archived/access-108.log  
+  inflating: mtec1002-lab-02/logs/archived/access-109.log  
+  inflating: mtec1002-lab-02/logs/archived/access-110.log  
+  inflating: mtec1002-lab-02/logs/archived/access-116.log  
+  inflating: mtec1002-lab-02/logs/archived/access-117.log  
+  inflating: mtec1002-lab-02/logs/archived/access-118.log  
+  inflating: mtec1002-lab-02/logs/archived/access-119.log  
+  inflating: mtec1002-lab-02/logs/archived/access-120.log  
+  inflating: mtec1002-lab-02/logs/archived/access-121.log  
+  inflating: mtec1002-lab-02/logs/archived/access-153.log  
+  inflating: mtec1002-lab-02/logs/archived/access-154.log  
+  inflating: mtec1002-lab-02/logs/archived/access-155.log  
+  inflating: mtec1002-lab-02/logs/archived/access-156.log  
+  inflating: mtec1002-lab-02/logs/archived/access-157.log  
+  inflating: mtec1002-lab-02/logs/archived/access-165.log  
+  inflating: mtec1002-lab-02/logs/archived/access-171.log  
+  inflating: mtec1002-lab-02/logs/archived/access-173.log  
+  inflating: mtec1002-lab-02/logs/archived/access-181.log  
+  inflating: mtec1002-lab-02/logs/archived/access-184.log  
+  inflating: mtec1002-lab-02/logs/archived/access-185.log  
+  inflating: mtec1002-lab-02/logs/archived/access-188.log  
+  inflating: mtec1002-lab-02/logs/archived/access-190.log  
+  inflating: mtec1002-lab-02/logs/archived/access-193.log  
+  inflating: mtec1002-lab-02/logs/archived/access-194.log  
+  inflating: mtec1002-lab-02/logs/archived/access-195.log  
+  inflating: mtec1002-lab-02/logs/archived/access-196.log  
+  inflating: mtec1002-lab-02/logs/archived/access-197.log  
+  inflating: mtec1002-lab-02/logs/archived/access-198.log  
+  inflating: mtec1002-lab-02/logs/archived/access-199.log  
+  inflating: mtec1002-lab-02/logs/archived/access-200.log  
+  inflating: mtec1002-lab-02/logs/archived/access-201.log  
+  inflating: mtec1002-lab-02/logs/archived/access-203.log  
+  inflating: mtec1002-lab-02/logs/archived/access-206.log  
+  inflating: mtec1002-lab-02/logs/archived/access-212.log  
+  inflating: mtec1002-lab-02/logs/archived/access-214.log  
+  inflating: mtec1002-lab-02/logs/archived/access-215.log  
+  inflating: mtec1002-lab-02/logs/archived/access-54.log  
+  inflating: mtec1002-lab-02/logs/archived/access-55.log  
+  inflating: mtec1002-lab-02/logs/archived/access-59.log  
+  inflating: mtec1002-lab-02/logs/archived/access-64.log  
+  inflating: mtec1002-lab-02/logs/archived/access-71.log  
+  inflating: mtec1002-lab-02/logs/archived/access-75.log  
+  inflating: mtec1002-lab-02/logs/archived/access-77.log  
+  inflating: mtec1002-lab-02/logs/archived/access-79.log  
+  inflating: mtec1002-lab-02/logs/archived/access-80.log  
+  inflating: mtec1002-lab-02/logs/archived/access-82.log  
+  inflating: mtec1002-lab-02/logs/archived/access-84.log  
+  inflating: mtec1002-lab-02/logs/archived/access-92.log  
+  inflating: mtec1002-lab-02/logs/archived/access-94.log  
+  inflating: mtec1002-lab-02/logs/archived/access-95.log  
+  inflating: mtec1002-lab-02/logs/archived/access-97.log  
+  inflating: mtec1002-lab-02/logs/archived/access-98.log  
+  inflating: mtec1002-lab-02/logs/archived/access-99.log  
+   creating: mtec1002-lab-02/web/
+  inflating: mtec1002-lab-02/web/about.html  
+   creating: mtec1002-lab-02/web/css/
+  inflating: mtec1002-lab-02/web/css/screen.css  
+   creating: mtec1002-lab-02/web/img/
+  inflating: mtec1002-lab-02/web/img/otters-1.jpg  
+  inflating: mtec1002-lab-02/web/img/otters-2.jpg  
+  inflating: mtec1002-lab-02/web/img/otters-3.jpg  
+  inflating: mtec1002-lab-02/web/img/otters-4.jpg  
+  inflating: mtec1002-lab-02/web/img/otters-5.jpg  
+  inflating: mtec1002-lab-02/web/index.html  
 
 ==========
 We're going to mess around with archiving and compressing files.  We'll make a directory with a file in it... archive and compress it.... and uncompress it elsewhere.
@@ -165,6 +391,13 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 Copy and paste the output below.
 ----------
 
+Adlm			MPLABXProjects		__MACOSX		pymel.log
+Adobe			Movies			google.txt		stuff
+Applications		Music			ipe.properties		test.rb
+Desktop			New Unity Project	isus			xgen
+Documents		Pictures		mtec1002-lab-02
+Downloads		Public			mtec1002-lab-02.zip
+Library			Things			mtec1003
 
 
 ==========
@@ -177,50 +410,46 @@ List the files in the directory you're currently in (which should be stuff).
 Copy and paste the output below.
 ----------
 
-
+hello.txt
 
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
 
 $ tar -cvf stuff.tar stuff
 
-List the files in the directory you're currently in (which should be home).  
-
 Copy and paste the output below.
 ----------
 
 
 
 ==========
-19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
-
-$ tar -cvf stuff.tar stuff
-
-Copy and paste the output below.
-----------
-
-
-
-==========
-20. List the files in the directory you're currently in (which should be home).  
+19. List the files in the directory you're currently in (which should be home).  
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 
-
+a stuff
+a stuff/hello.txt
 
 ==========
-21. Now compress it!  Type:
+20. Now compress it!  Type:
 
 gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
 
+Adlm			MPLABXProjects		__MACOSX		pymel.log
+Adobe			Movies			google.txt		stuff
+Applications		Music			ipe.properties		stuff.tar.gz
+Desktop			New Unity Project	isus			test.rb
+Documents		Pictures		mtec1002-lab-02		xgen
+Downloads		Public			mtec1002-lab-02.zip
+Library			Things			mtec1003
 
 
 ==========
-22. Move stuff.tar.gz into the lab directory that we downloaded.  We didn't learn this command yet, so just type in exactly as is:
+21. Move stuff.tar.gz into the lab directory that we downloaded.  We didn't learn this command yet, so just type in exactly as is:
 
 $ mv stuff.tar.gz mtec1002-lab-02 
 
@@ -230,27 +459,27 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+books		logs		stuff.tar.gz	web
 
 ==========
-23. You should be in the lab directory.  Let's uncompress the file.
+22. You should be in the lab directory.  Let's uncompress the file.
 
 $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+books		logs		stuff		stuff.tar.gz	web
 
 
 ==========
-24. Go back to your home directory
+23. Go back to your home directory
 [No output]
 ----------
 
-
+no output
 
 ==========
-25. Download and uncompress this file using curl and tar -xvf in your home directory:
+24. Download and uncompress this file using curl and tar -xvf in your home directory:
 
 http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
 
@@ -259,8 +488,8 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 Write out the commands that you used to do this.
 ----------
 
-
+curl -o secret.tar.gz http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
 
 ==========
-26. How many files were in the archive.  What were their names?  Write out your answers below.
+25. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
