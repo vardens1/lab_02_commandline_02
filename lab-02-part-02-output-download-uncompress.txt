@@ -160,7 +160,7 @@ Write down the command that you used to download the file below.  Additionally, 
 Write down the command that you used to uncompress the file.
 ----------
 
-
+unzip mtec1002-lab-02.zip
 
 ==========
 15. Change to the directory that was just created.  List the contents (of the directory that was extracted from the labs .zip file). 
@@ -184,7 +184,7 @@ Archive:  mtec1002-lab-02.zip
   inflating: mtec1002-lab-02/logs/.DS_Store  
    creating: __MACOSX/mtec1002-lab-02/logs/
   inflating: __MACOSX/mtec1002-lab-02/logs/._.DS_Store  
-  inflating: mtec1002-lab-02/logs/access-0.log  
+   inflating: mtec1002-lab-02/logs/access-0.log  
   inflating: mtec1002-lab-02/logs/access-1.log  
   inflating: mtec1002-lab-02/logs/access-10.log  
   inflating: mtec1002-lab-02/logs/access-11.log  
@@ -420,7 +420,8 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
+a stuff
+a stuff/hello.txt
 
 ==========
 19. List the files in the directory you're currently in (which should be home).  
@@ -428,8 +429,15 @@ Copy and paste the output below.
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 
-a stuff
-a stuff/hello.txt
+Adlm			Music			isus
+Adobe			New Unity Project	mtec1002-lab-02
+Applications		Pictures		mtec1002-lab-02.zip
+Desktop			Public			mtec1003
+Documents		Things			pymel.log
+Downloads		__MACOSX		stuff
+Library			archive.tar.gz		
+MPLABXProjects		google.txt		test.rb
+Movies			ipe.properties		xgen
 
 ==========
 20. Now compress it!  Type:
